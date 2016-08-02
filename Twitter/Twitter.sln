@@ -11,8 +11,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8BDAB0AC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Libraries", "External Libraries", "{D3CA4E68-F424-4D5A-A0E0-B971FE3E455B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Models", "Twitter.Models\Twitter.Models.csproj", "{20FBD37E-029A-4DC7-8297-F36FBA506851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Data", "Twitter.Data\Twitter.Data.csproj", "{3D8F990D-179A-4B92-8E23-4793F1A0C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Web", "Twitter.Web\Twitter.Web.csproj", "{BEFA0774-0745-4E47-8FF2-418C445DC524}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20FBD37E-029A-4DC7-8297-F36FBA506851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20FBD37E-029A-4DC7-8297-F36FBA506851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20FBD37E-029A-4DC7-8297-F36FBA506851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20FBD37E-029A-4DC7-8297-F36FBA506851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8F990D-179A-4B92-8E23-4793F1A0C42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8F990D-179A-4B92-8E23-4793F1A0C42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8F990D-179A-4B92-8E23-4793F1A0C42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8F990D-179A-4B92-8E23-4793F1A0C42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFA0774-0745-4E47-8FF2-418C445DC524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFA0774-0745-4E47-8FF2-418C445DC524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFA0774-0745-4E47-8FF2-418C445DC524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFA0774-0745-4E47-8FF2-418C445DC524}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20FBD37E-029A-4DC7-8297-F36FBA506851} = {FA2241FC-5008-4F26-A7C6-EF73CA25AD8D}
+		{3D8F990D-179A-4B92-8E23-4793F1A0C42D} = {FA2241FC-5008-4F26-A7C6-EF73CA25AD8D}
+		{BEFA0774-0745-4E47-8FF2-418C445DC524} = {36C1F10A-CF69-480A-A83E-A71509A2CECE}
 	EndGlobalSection
 EndGlobal
