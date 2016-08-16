@@ -12,3 +12,17 @@ D:\Users\Jozi\Desktop\softuni\3. Back-End\4. ASP.NET MVC\trunk\Twitter\Twitter.M
 D:\Users\Jozi\Desktop\softuni\3. Back-End\4. ASP.NET MVC\trunk\Twitter\Twitter.Models\obj\Debug\Twitter.Models.csprojResolveAssemblyReference.cache
 D:\Users\Jozi\Desktop\softuni\3. Back-End\4. ASP.NET MVC\trunk\Twitter\Twitter.Models\obj\Debug\Twitter.Models.dll
 D:\Users\Jozi\Desktop\softuni\3. Back-End\4. ASP.NET MVC\trunk\Twitter\Twitter.Models\obj\Debug\Twitter.Models.pdb
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Twitter.Models.dll.config
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Twitter.Models.dll
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Twitter.Models.pdb
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\EntityFramework.dll
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\EntityFramework.xml
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\obj\Debug\Twitter.Models.csprojResolveAssemblyReference.cache
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\obj\Debug\Twitter.Models.dll
+C:\Users\Jozefina Nikolova\Desktop\Twitter\Twitter.Models\obj\Debug\Twitter.Models.pdb
