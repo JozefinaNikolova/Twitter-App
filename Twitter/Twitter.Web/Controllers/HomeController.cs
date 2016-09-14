@@ -19,10 +19,11 @@
             var tweets = this.Data.Tweets
                 .All()
                 .Select(TweetViewModel.Create);
+
             return this.View(tweets);
         }
-
-        public ActionResult About()
+       
+        public ActionResult Profile()
         {
             ViewBag.Message = "Your application description page.";
 
