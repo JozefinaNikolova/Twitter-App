@@ -1,8 +1,19 @@
 ﻿@model IEnumerable<Twitter.Web.Models.TweetViewModel>
 
 <div class="jumbotron">
-    <h1>Twitter</h1>
+    <h1>Welcome to Twitter</h1>
 </div>
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    @using(Html.BeginForm())
+    <div class="form-group">
+        <label for="newTweet">Post a new tweet:</label>
+        <textarea class="form-control" rows="3" id="newTweet"></textarea>
+
+        <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Add", "Tweet")'">Post</button>
+    </div>
+}
 
 @foreach (var item in Model)
 {
@@ -12,11 +23,14 @@
             <p>@item.Content</p>
             <p>@item.Url</p>
 
-            <button type="button" class="btn btn-success">Favourite</button>
-            <button type="button" class="btn btn-success">Retweet</button>
-            <button type="button" class="btn btn-success">Reply</button>
-            <button type="button" class="btn btn-success">Report</button>
-            <button type="button" class="btn btn-success">Share</button>
+            @if (this.User.Identity.IsAuthenticated)
+            {
+                <button type="button" class="btn btn-success">Favourite</button>
+                <button type="button" class="btn btn-success">Retweet</button>
+                <button type="button" class="btn btn-success">Reply</button>
+                <button type="button" class="btn btn-success">Report</button>
+                <button type="button" class="btn btn-success">Share</button>
+            }
         </div>
     </div>
 }

@@ -25,9 +25,7 @@
        
         public ActionResult Profile()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            return this.View();
         }
 
         public ActionResult Contact()

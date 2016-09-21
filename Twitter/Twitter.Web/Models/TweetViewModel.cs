@@ -5,8 +5,6 @@
     using Twitter.Models;
     public class TweetViewModel
     {
-        public int Id { get; set; }
-
         public string Content { get; set; }
 
         public string Url { get; set; }
@@ -19,7 +17,6 @@
             {
                 return t => new TweetViewModel()
                 {
-                    Id = t.Id,
                     Content = t.Content,
                     Url = t.Url,
                     PostedBy = t.PostedBy.UserName

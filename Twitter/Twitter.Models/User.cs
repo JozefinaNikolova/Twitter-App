@@ -34,6 +34,12 @@
             return userIdentity;
         }
 
+        public string FullName { get; set; }
+
+        public string AvatarUrl { get; set; }
+
+        public string Summary { get; set; }
+
         public virtual ICollection<User> Followers
         {
             get { return this.followers; }
