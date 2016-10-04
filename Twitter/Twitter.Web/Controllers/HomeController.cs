@@ -18,6 +18,7 @@
         {
             var tweets = this.Data.Tweets
                 .All()
+                .OrderByDescending(t => t.CreatedOn)
                 .Select(TweetViewModel.Create);
 
             return this.View(tweets);

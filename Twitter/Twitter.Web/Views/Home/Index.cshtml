@@ -4,32 +4,20 @@
     <h1>Welcome to Twitter</h1>
 </div>
 
-@if (this.User.Identity.IsAuthenticated)
-{
-    @using(Html.BeginForm())
-    <div class="form-group">
-        <label for="newTweet">Post a new tweet:</label>
-        <textarea class="form-control" rows="3" id="newTweet"></textarea>
-
-        <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Add", "Tweet")'">Post</button>
-    </div>
-}
-
 @foreach (var item in Model)
 {
     <div class="panel panel-default">
         <div class="panel-body">
-            <p><strong>@item.PostedBy</strong></p>
+            <p>By <strong>@item.PostedBy</strong> on @item.CreatedOn.ToString("dd-MM-yyyy hh:mm")</p>
             <p>@item.Content</p>
             <p>@item.Url</p>
+            <p>@item.FavsCount <span class="glyphicon glyphicon-heart"></span></p> 
 
             @if (this.User.Identity.IsAuthenticated)
             {
-                <button type="button" class="btn btn-success">Favourite</button>
-                <button type="button" class="btn btn-success">Retweet</button>
-                <button type="button" class="btn btn-success">Reply</button>
-                <button type="button" class="btn btn-success">Report</button>
-                <button type="button" class="btn btn-success">Share</button>
+                @Html.ActionLink("Favourite", "Favourite", "Tweet", new { id = @item.Id }, new { @class = "btn btn-success" })
+                @Html.ActionLink("Retweet", "Retweet", "Tweet", new { id = @item.Id }, new { @class = "btn btn-success" })
+                @Html.ActionLink("Reply", "Reply", "Tweet", new { id = @item.Id }, new { @class = "btn btn-success" })
             }
         </div>
     </div>

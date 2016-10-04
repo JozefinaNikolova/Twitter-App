@@ -1,0 +1,28 @@
+﻿@model Twitter.Web.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Model.Username</h2>
+
+@Html.DisplayNameFor(x => x.FullName) : @Html.DisplayFor(x => x.FullName)
+@Html.DisplayNameFor(x => x.Email) : @Html.DisplayFor(x => x.Email)
+@Html.DisplayNameFor(x => x.Summary) : @Html.DisplayFor(x => x.Summary)
+
+@foreach (var item in Model.Tweets)
+{
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p><strong>@item.PostedBy</strong></p>
+            <p>@item.Content</p>
+            <p>@item.Url</p>
+            <p>@item.FavsCount <span class="glyphicon glyphicon-heart"></span></p> 
+
+            @Html.ActionLink("Favourite", "Favourite", "Tweet", new { id = @item.Id }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Retweet", "Retweet", "Tweet", new { id = @item.Id }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Reply", "Reply", "Tweet", new { id = @item.Id }, new { @class = "btn btn-success" })
+        </div>
+    </div>
+}
+

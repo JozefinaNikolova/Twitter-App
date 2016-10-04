@@ -1,5 +1,6 @@
 ﻿namespace Twitter.Models
 {
+    using System;
     using System.Collections.Generic;
     public class Tweet
     {
@@ -8,6 +9,7 @@
 
         public Tweet()
         {
+            this.CreatedOn = DateTime.Now;
             this.favouriteBy = new HashSet<User>();
             this.replies = new HashSet<Tweet>();
         }
@@ -17,6 +19,8 @@
         public string Content { get; set; }
 
         public string Url { get; set; }
+
+        public DateTime CreatedOn { get; set; }
 
         public virtual Tweet ReplyTo { get; set; }
 
